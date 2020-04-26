@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeAndOrder">
+
+    <RelativeLayout
+        android:id="@+id/wallet_1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <ImageView
+            android:id="@+id/recipeOrder"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="140dp"
+            android:background="@drawable/cerclebacgroundpurple"
+            android:padding="10dp"
+            android:src="@drawable/ic_food_black_24dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wallet_1">
+        <RelativeLayout
+            android:id="@+id/ordr_up"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    //food item1
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="20dp"
+                        android:background="#f2f2f2"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/food_item1_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:id="@+id/main_photo"
+                                android:background="@drawable/foodplate"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+                            <TextView
+                                android:id="@+id/txt_food_time"
+                                android:text="Lunch"
+                                android:textColor="@color/black"
+                                android:padding="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/main_photo"/>
+                            <TableLayout
+                                android:id="@+id/main_recipe_item_tbl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/main_photo">
+                                <TableRow
+                                    android:id="@+id/main_curry1"
+                                    android:layout_margin="5dp"
+                                    android:background="#dcdcdc">
+                                    <TextView
+                                        android:text="Dhal Curry"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/black"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/main_curry_text1"/>
+                                </TableRow>
+                                <TableRow
+                                    android:id="@+id/main_curry2"
+                                    android:background="#bdbdbd"
+                                    android:layout_margin="5dp">
+                                    <TextView
+                                        android:text="Kirimalu curry"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/black"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/main_curry_text2"/>
+                                </TableRow>
+                                <TableRow
+                                    android:id="@+id/main_curry3"
+                                    android:layout_margin="5dp"
+                                    android:background="#dcdcdc">
+                                    <TextView
+                                        android:text="Soyameet"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/black"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/main_curry_text3"/>
+                                </TableRow>
+                                <TableRow
+                                    android:id="@+id/main_curry4"
+                                    android:background="#bdbdbd"
+                                    android:layout_margin="5dp">
+                                    <TextView
+                                        android:text="Samble"
+                                        android:textSize="10dp"
+                                        android:textColor="@color/black"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/main_curry_text4"/>
+                                </TableRow>
+                                <TableRow
+                                    android:id="@+id/main_curry5"
+                                    android:layout_margin="5dp"
+                                    android:background="#dcdcdc">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/main_curry_text5"/>
+                                </TableRow>
+                            </TableLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txt_add_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text="Add More Curry"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                android:textAlignment="center"/>
+                            <ListView
+                                android:id="@+id/checkable_list"
+                                android:layout_below="@id/txt_add_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"/>
+                            <Button
+                                android:id="@+id/bt"
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/checkable_list"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/buttons"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                android:text="Add"
+                                android:textColor="@android:color/white"
+                                android:onClick="showSelectedItems"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    //food item2
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="20dp"
+                            android:background="#f2f2f2">
+                    </LinearLayout>
+
+                        //food item3
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="350dp"
+                            android:layout_margin="20dp"
+                            android:background="#f2f2f2">
+                        </LinearLayout>
+
+                        //food item4
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="350dp"
+                            android:layout_margin="20dp"
+                            android:background="#f2f2f2">
+                        </LinearLayout>
+                </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ordr_up">
+
+            <LinearLayout
+                android:id="@+id/show_bill"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/down_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/rs"
+                        android:layout_width="80dp"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/view_rs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Rs."
+                            android:textSize="40dp"
+                            android:padding="0dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_toRightOf="@+id/rs"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="400.00"
+                            android:textSize="40dp"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/show_bill"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/pay_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/linear_layout_login"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttons"
+
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:text="Pay"
+                    android:textColor="@android:color/white"/>
+                <Button
+                    android:id="@+id/clear_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/pay_btn"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/redbutton"
+
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:text="Remove"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

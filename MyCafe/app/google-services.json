@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043310161063",
+    "firebase_url": "https://applogin-4c598.firebaseio.com",
+    "project_id": "applogin-4c598",
+    "storage_bucket": "applogin-4c598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043310161063:android:375d71bca88a674ed57f82",
+        "android_client_info": {
+          "package_name": "com.example.mycafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043310161063-9h11iuedhsc291hd5bo2e19f38jnh6qe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mycafe",
+            "certificate_hash": "cef1d48846132d84812042869257d7617ca572e7"
+          }
+        },
+        {
+          "client_id": "1043310161063-uroa9fk53ctlsl8qngedjdu21jdm8t1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp7MZLj-VRt40OfWpNCm9sKUlqVwUxLj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043310161063-uroa9fk53ctlsl8qngedjdu21jdm8t1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

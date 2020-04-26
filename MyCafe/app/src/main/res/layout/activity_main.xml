@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activitymain_background"
+    android:orientation="horizontal">
+
+
+    //Header
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mainLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mycafe_logo"
+            />
+
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignLeft="@+id/mainLogo"
+            android:text="MyCafe"
+            android:textSize="50sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainTitle"
+            android:layout_alignStart="@+id/mainLogo"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:text="Canteen Management System"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    //Canteen List
+    <RelativeLayout
+        android:id="@+id/canteenList"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/header"
+        android:layout_marginBottom="-350dp">
+        <TextView
+            android:id="@+id/txtView.science_canteen_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.Faculty Canteen"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtView.staff_canteen_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.Staff Canteen"
+            android:layout_marginBottom="-60dp"
+            android:layout_alignBottom="@+id/txtView.science_canteen_link"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtView.senta_canteen_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.Main Canteen"
+            android:layout_marginBottom="-60dp"
+            android:layout_alignBottom="@+id/txtView.staff_canteen_link"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+
+
+    </RelativeLayout>
+
+    //Bottom
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnSign_in"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Login"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnSign_up"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnSign_in"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Create New User"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

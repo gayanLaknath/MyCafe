@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUser"
+    android:background="@drawable/activitylog_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/newUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/user_email"/>
+
+        <EditText
+            android:id="@+id/newUserPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/newUserUsername"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="@string/user_password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/newUserUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/newUserEmail"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/newUserPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/newUserPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/btn_createUser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/newUserPhoneNumber"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Create New User"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/userLogin_ui"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="130dp"
+            android:layout_below="@id/btn_createUser"
+            android:gravity="center"
+            android:text="Already Registered! Sign In"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
